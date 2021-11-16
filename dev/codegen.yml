@@ -1,0 +1,17 @@
+overwrite: true
+schema: ../api/schema.graphql
+documents: ../src/graphql/**/*.graphql
+generates:
+  ../api/generated/resolvers.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+  ../src/generated/index.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+    config:
+      fetcher: graphql-request
+      isReactHook: true
+      exposeQueryKeys: true

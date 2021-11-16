@@ -1,0 +1,12 @@
+#!/bin/sh -eux
+
+PROJECT_ROOT=$(cd $(dirname $0)/.. && pwd)
+cd $PROJECT_ROOT
+
+./dev/node_modules/.bin/concurrently --kill-others \
+  -n swa,api,codegen,vite \
+  -c cyan,yellow,gray,gray \
+  "cd dev && ./node_modules/.bin/swa start http://localhost:3000 --api-location=http://localhost:7071" \
+  "cd api && ./node_modules/.bin/nodemon" \
+  "cd dev && ./node_modules/.bin/graphql-codegen --overwrite --config codegen.yml --watch" \
+  "./node_modules/.bin/vite"

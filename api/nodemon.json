@@ -1,0 +1,6 @@
+{
+  "watch": [".", "function.json"],
+  "ext": "js,ts,json",
+  "ignore": ["node_modules", "dist"],
+  "exec": "yarn run start"
+}

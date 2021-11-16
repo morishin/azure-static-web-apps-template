@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "^0.8.0",
+    "@graphql-codegen/cli": "^2.2.2",
+    "@graphql-codegen/typescript": "^2.3.1",
+    "@graphql-codegen/typescript-operations": "^2.2.0",
+    "@graphql-codegen/typescript-react-query": "^3.1.1",
+    "@graphql-codegen/typescript-resolvers": "^2.4.0",
+    "concurrently": "^6.3.0",
+    "graphql": "^16.0.1"
+  }
+}

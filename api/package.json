@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "cp schema.graphql dist/",
+    "watch": "tsc -w",
+    "dev": "nodemon",
+    "prestart": "yarn run build",
+    "start": "func start --cors \"*\" --port 7071",
+    "test": "echo \"No tests yet...\""
+  },
+  "devDependencies": {
+    "@azure/functions": "^1.2.3",
+    "azure-functions-core-tools": "3",
+    "grpc": "^1.24.11",
+    "nodemon": "^2.0.14",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "apollo-server-azure-functions": "^3.5.0",
+    "axios": "^0.24.0",
+    "graphql": "^16.0.1"
+  }
+}

@@ -1,0 +1,11 @@
+type Item {
+  id: ID!
+  name: String!
+  price: Int
+  imageUrl: String
+  itemUrl: String!
+}
+
+type Query {
+  searchItems(query: String!): [Item!]!
+}

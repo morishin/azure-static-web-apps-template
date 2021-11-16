@@ -1,0 +1,41 @@
+#!/bin/sh -eux
+
+NODE_VERSION=14
+
+if !(type "node" > /dev/null 2>&1); then
+  echo "❌ node をインストールしてください。nodebrew の利用がおすすめです: https://github.com/hokaccha/nodebrew"
+  exit 1;
+fi
+if [[ ! `node -v` =~ ^v$NODE_VERSION.+$ ]]; then
+  echo "❌ node のバージョンは v$NODE_VERSION を使用してください。nodebrew を使っている場合は \`nodebrew use $NODE_VERSION\` で切り替えられます。"
+  exit 1;
+fi
+if !(type "yarn" > /dev/null 2>&1); then
+  echo "❌ yarn をインストールしてください。macOS で Homebrew を使っている場合は \`brew install yarn --ignore-dependencies\` でインストールできます。"
+  exit 1;
+fi
+
+PROJECT_ROOT=$(cd $(dirname $0)/.. && pwd)
+cd $PROJECT_ROOT
+
+# dev
+cd dev
+yarn install
+cd -
+
+# api
+cd api
+yarn install
+if [[ `uname -m` == 'arm64' ]] && [[ `uname -s` == 'Darwin' ]]; then
+  # Workaround for M1 Mac
+  # @see https://github.com/Azure/azure-functions-nodejs-worker/issues/386#issuecomment-778550469
+  ln -sf "$PROJECT_ROOT/api/node_modules/grpc/src/node/extension_binary/node-v83-darwin-arm64-unknown" "$PROJECT_ROOT/api/node_modules/azure-functions-core-tools/bin/workers/node/grpc/src/node/extension_binary"
+fi
+yarn build
+cd -
+
+# frontend
+yarn install
+yarn build
+
+printf "✅ Setup has been succeeded."
