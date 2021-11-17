@@ -57,6 +57,14 @@ yarn dev
 
 ## Deploy
 
-Create Azure Static Web App. See https://docs.microsoft.com/en-US/azure/static-web-apps/getting-started?tabs=vanilla-javascript.
+Example app: https://polite-forest-02a51e600.azurestaticapps.net/
 
-Auto-generated GitHub Actions deploy this app when codes are pushed to `main` branch 🚀
+You can deploy your own app as Azure Static Web Apps.
+
+1. Clone this repository, run setup, and remove `.github` directory including an example azure app info.
+1. Create Azure Static Web App. See https://docs.microsoft.com/en-US/azure/static-web-apps/getting-started?tabs=vanilla-javascript.
+1. Auto-generated GitHub Actions deploy this app when codes are pushed to `main` branch 🚀
+
+# LICENSE
+
+MIT
