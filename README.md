@@ -2,6 +2,8 @@
 
 A web application example using Vite, React, TypeScript, GraphQL and hosted on Azure Static Web Apps.
 
+You can see the running app here: https://polite-forest-02a51e600.azurestaticapps.net/.
+
 This app uses:
 
 - [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/)
