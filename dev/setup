@@ -3,15 +3,15 @@
 NODE_VERSION=14
 
 if !(type "node" > /dev/null 2>&1); then
-  echo "❌ node をインストールしてください。nodebrew の利用がおすすめです: https://github.com/hokaccha/nodebrew"
+  echo "❌ Please install node v$NODE_VERSION."
   exit 1;
 fi
 if [[ ! `node -v` =~ ^v$NODE_VERSION.+$ ]]; then
-  echo "❌ node のバージョンは v$NODE_VERSION を使用してください。nodebrew を使っている場合は \`nodebrew use $NODE_VERSION\` で切り替えられます。"
+  echo "❌ Please use node v$NODE_VERSION. Your current node version is `node -v`"
   exit 1;
 fi
 if !(type "yarn" > /dev/null 2>&1); then
-  echo "❌ yarn をインストールしてください。macOS で Homebrew を使っている場合は \`brew install yarn --ignore-dependencies\` でインストールできます。"
+  echo "❌ Please install yarn."
   exit 1;
 fi
 
