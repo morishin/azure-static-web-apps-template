@@ -61,7 +61,7 @@ yarn dev
 
 ## Deploy
 
-Example app: https://polite-forest-02a51e600.azurestaticapps.net/
+Example app: ~~https://polite-forest-02a51e600.azurestaticapps.net/~~
 
 You can deploy your own app as Azure Static Web Apps.
 
