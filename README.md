@@ -2,7 +2,7 @@
 
 A web application example using Vite, React, TypeScript, GraphQL and hosted on Azure Static Web Apps.
 
-You can see the running app here: https://polite-forest-02a51e600.azurestaticapps.net/.
+You can see the running app here: https://green-island-0e0ec2900.1.azurestaticapps.net/.
 
 This app uses:
 
@@ -61,12 +61,13 @@ yarn dev
 
 ## Deploy
 
-Example app: ~~https://polite-forest-02a51e600.azurestaticapps.net/~~
+Example app: https://green-island-0e0ec2900.1.azurestaticapps.net/
 
 You can deploy your own app as Azure Static Web Apps.
 
 1. Clone this repository, run setup, and remove `.github` directory including an example azure app info.
 1. Create Azure Static Web App. See https://docs.microsoft.com/en-US/azure/static-web-apps/getting-started?tabs=vanilla-javascript.
+    - Specify `/` as an app location and `dist` as an output location.
 1. Auto-generated GitHub Actions deploy this app when codes are pushed to `main` branch 🚀
 
 # LICENSE
