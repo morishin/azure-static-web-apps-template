@@ -2,7 +2,7 @@
 
 A web application example using Vite, React, TypeScript, GraphQL and hosted on Azure Static Web Apps.
 
-You can see the running app here: https://green-island-0e0ec2900.azurestaticapps.net/.
+You can see the running app here: https://green-island-0e0ec2900.1.azurestaticapps.net/.
 
 This app uses:
 
@@ -61,7 +61,7 @@ yarn dev
 
 ## Deploy
 
-Example app: https://green-island-0e0ec2900.azurestaticapps.net/
+Example app: https://green-island-0e0ec2900.1.azurestaticapps.net/
 
 You can deploy your own app as Azure Static Web Apps.
 
