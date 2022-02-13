@@ -2,23 +2,23 @@
 # yarn lockfile v1
 
 
-"@azure/static-web-apps-cli@^0.8.0":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@azure/static-web-apps-cli/-/static-web-apps-cli-0.8.1.tgz#fdddfe565e6c720691785a733ae6a8037bb71cc0"
-  integrity sha512-cNgIx+saGwl4bWlsCrHaHbBJ57neRDjfyKDBp3JU/5VvOkga4bj1p0zrUf9sUGPxEb4q9lUY5GLlZRkwudgC4w==
+"@azure/static-web-apps-cli@^0.8.2":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@azure/static-web-apps-cli/-/static-web-apps-cli-0.8.2.tgz#1633b2ada8e49be54628ada143a02ad721fc4ed2"
+  integrity sha512-hCIfFDYkRUvg0s3HfKZm3ZmXubprutkonFFOgFsjNzaRYtOGIzl8SpeRYCQn36TDzCTAdKect39IPDSCbJqMbA==
   dependencies:
     "@types/globalyzer" "^0.1.1"
-    "@types/globrex" "^0.1.0"
+    "@types/globrex" "^0.1.1"
     chalk "^4.1.2"
     commander "^7.2.0"
-    concurrently "^6.2.1"
+    concurrently "^6.3.0"
     cookie "^0.4.1"
     finalhandler "^1.1.2"
     globalyzer "^0.1.4"
     globrex "^0.1.2"
     http-proxy "^1.18.1"
     internal-ip "^6.2.0"
-    node-fetch "^2.6.1"
+    node-fetch "^2.6.6"
     ora "^5.4.1"
     rimraf "^3.0.2"
     serve-static "^1.14.1"
@@ -952,7 +952,7 @@
   resolved "https://registry.yarnpkg.com/@types/globalyzer/-/globalyzer-0.1.1.tgz#95a3b86ba716deb0f74ae2eb6e20a71cbc78034d"
   integrity sha512-gVwHahQuRa99MtOViPFPf0nIvhQU4ike0o9Q6ajhKj+EsP+Xz04gWdidwhXxfyyjScIIhvopKUm8/Wft1JJ3cw==
 
-"@types/globrex@^0.1.0":
+"@types/globrex@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@types/globrex/-/globrex-0.1.1.tgz#c05a8944253a09a711f53e6767df7909d2407e0c"
   integrity sha512-bce8X5Yb8l8ou2VDaEG8CYY1p6NynmswkaasO1pdAzFASKJ43sjf9MQdVH6VmKNG2bPEEmvI5onJJSH+1qOMOA==
@@ -1522,7 +1522,7 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-concurrently@^6.2.1, concurrently@^6.3.0:
+concurrently@^6.3.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-6.4.0.tgz#5387ee86be435a0eb51c292ade8a00acf479f170"
   integrity sha512-HZ3D0RTQMH3oS4gvtYj1P+NBc6PzE2McEra6yEFcQKrUQ9HvtTGU4Dbne083F034p+LRb7kWU0tPRNvSGs1UCQ==
@@ -2987,6 +2987,13 @@ node-fetch@^2.6.1, node-fetch@^2.6.5:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.6.tgz#1751a7c01834e8e1697758732e9efb6eeadfaf89"
   integrity sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==
+  dependencies:
+    whatwg-url "^5.0.0"
+
+node-fetch@^2.6.6:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
   dependencies:
     whatwg-url "^5.0.0"
 
