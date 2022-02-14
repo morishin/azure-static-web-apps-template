@@ -30,7 +30,7 @@ function App() {
 // eslint-disable-next-line import/no-default-export
 export default App;
 
-export const theme = extendTheme({
+const theme = extendTheme({
   styles: {
     global: {
       "html, body": {
