@@ -16,8 +16,4 @@ const server = new ApolloServer({
 });
 
 // eslint-disable-next-line import/no-default-export
-export default server.createHandler({
-  cors: {
-    origin: "*",
-  },
-});
+export default server.createHandler();

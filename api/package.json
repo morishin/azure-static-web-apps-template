@@ -6,7 +6,7 @@
     "watch": "tsc -w",
     "dev": "nodemon",
     "prestart": "yarn run build",
-    "start": "func start --cors \"*\" --port 7071",
+    "start": "func start --port 7071",
     "test": "echo \"No tests yet...\""
   },
   "devDependencies": {
